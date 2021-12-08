@@ -4,12 +4,3 @@ services:
     build: .
     ports:
       - '8080:8080'
-  db:
-    image: 'mysql'
-    environment:
-      MYSQL_ROOT_PASSWORD: password
-    volumes:
-      - 'db-data:/users'
-
-volumes:
-  db-data:

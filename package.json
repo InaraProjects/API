@@ -1,12 +1,25 @@
 {
-  "dependencies": {
-    "express": "^4.17.1"
-  },
+  "name": "API",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/InaraProjects/API.git",
+  "author": "Not Arc <arcpoggers@gmail.com>",
+  "license": "MIT",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node App.js",
+    "dev": "DEBUG=true nodemon App.js"
   },
   "prettier": {
     "singleQuote": true,
     "arrowParens": "avoid"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "express-ws": "^5.0.2",
+    "morgan": "^1.10.0",
+    "node-schedule": "^2.0.0",
+    "pino": "^6.13.0",
+    "timer-node": "^5.0.5"
   }
 }
